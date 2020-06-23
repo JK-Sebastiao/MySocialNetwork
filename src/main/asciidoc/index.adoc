@@ -1,0 +1,88 @@
+= MySocialNetwork REST Service API Guide
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectnums:
+:sectlinks:
+
+= Resources
+
+== User Resource
+
+The MySocialNetwork provides the entry point into the service.
+
+==== Get All Users
+operation::user/getAllUsersTest[snippets='http-request,http-response,response-fields']
+
+==== Get User by ID
+operation::user/getUserByIdTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Get User without ID
+operation::user/shouldReturnStatusNotFound[snippets='http-request,path-parameters,http-response']
+
+==== Get Followed User
+operation::user/getFollowedUsersTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Follow an User
+operation::user/addFollowedUserTest[snippets='http-request,path-parameters,http-response']
+
+==== Register User
+operation::user/saveUserTest[snippets='http-request,request-fields,http-response,response-fields']
+
+==== Update User
+operation::user/updateUserTest[snippets='http-request,path-parameters,request-fields,http-response,response-fields']
+
+==== Delete User
+operation::user/deleteUserTest[snippets='http-request,path-parameters,http-response']
+
+
+
+== Post Resource
+==== Get All Posts
+operation::post/getAllPostsTest[snippets='http-request,http-response,response-fields']
+
+==== Get Post by ID
+operation::post/getPostByIdTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Get Followed Users Posts
+operation::post/getFollowedUsersPostsTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Get Posts by User
+operation::post/getUserPostsTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Add Post
+operation::post/savePostTest[snippets='http-request,path-parameters,request-fields,http-response,response-fields']
+
+==== Edit Post
+operation::post/updatePostTest[snippets='http-request,path-parameters,request-fields,http-response,response-fields']
+
+==== Delete Post
+operation::post/deletePostTest[snippets='http-request,path-parameters,http-response']
+
+
+== Comment Resource
+==== Get All Comments
+operation::comment/getAllCommentsTest[snippets='http-request,http-response,response-fields']
+
+==== Get Comment by ID
+operation::comment/getCommentByIdTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Get Comment by Post
+operation::comment/getCommentsByPostTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Get Comment by User
+operation::comment/getCommentsByUserTest[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Add Comment
+operation::comment/saveCommentTest[snippets='http-request,path-parameters,request-fields,http-response,response-fields']
+
+==== Edit Comment
+operation::comment/updateCommentTest[snippets='http-request,path-parameters,request-fields,http-response,response-fields']
+
+==== Delete Comment
+operation::comment/deleteCommentTest[snippets='http-request,path-parameters,http-response']
+
+
+As you can see the format is very simple, and in fact you always get the same message.
