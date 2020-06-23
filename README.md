@@ -17,7 +17,7 @@ To stop the container, hit `CTRL-C`. Verify the container isn’t running, execu
 Than:\
 `docker kill <CONTAINER_ID>`
 
-* [MySocialNetwork API documentation](https://github.com/JK-Sebastiao/MySocialNetwork/blob/master/src/main/asciidoc/index.html)
-* [MySocialNetwork API documentation](src/main/asciidoc/index.adoc)
+### How to use MySocialNetwork API
+* See [MySocialNetwork API documentation](https://jk-sebastiao.github.io/)
 
 
